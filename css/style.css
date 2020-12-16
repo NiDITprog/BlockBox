@@ -9,11 +9,16 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    width: 1170px;
     margin: 0 auto;
 }
 
 /*----------------------Block 1----------------------*/
+
+.block1,
+.block2 {
+    padding-bottom: 120px;
+}
 
 .block1__nav {
     margin-top: 16px;
@@ -80,6 +85,10 @@ body {
     transform: rotate(-0.6deg);
 }
 
+.block1-left__container {
+    position: relative;
+}
+
 .block1-left__btnPlay {
     display: inline-block;
     width: 72px;
@@ -104,3 +113,91 @@ body {
     line-height: 1.5;
     letter-spacing: -0.03em;
 }
+
+.block1-right__form {
+    margin-top: 24px;
+}
+
+.block1-right__input-container {
+    display: flex;
+    position: relative;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 8px;
+}
+
+.block1-right__input {
+    padding: 25px 5px 25px 32px;
+    width: calc(100% - 120px);
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.03em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.block1-right__btn {
+    background: #2945FF;
+    margin-top: 8px;
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    height: 50px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 16px;
+    outline: none;
+    display: block;
+}
+
+.block1-right__advantage {
+    display: flex;
+}
+
+.block1-right__box {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+.block1-right__box img {
+    margin-right: 2px;
+}
+
+.block1-right__box-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.block2__title {
+    margin-top: 120px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: -0.03em;
+}
+
+.block2__subtitle {
+    text-align: center;
+    width: 500px;
+    margin: 12px auto;
+}
+
+.block2__wrapper {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-gap: 30px;
+}
+
+.block2__card {
+    width: 100%;
+    height: 215px;
+    border: 1px solid #EAEAEA;
+    border-radius: 24px;
+}
+
