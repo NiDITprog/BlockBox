@@ -87,6 +87,9 @@ body {
 
 .block1-left__container {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .block1-left__btnPlay {
@@ -96,9 +99,11 @@ body {
     background: url("../img/block1/block1-left-btnPlay.svg") no-repeat;
     border-radius: 100%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transition: transform .3s linear;
+}
+
+.block1-left__btnPlay:hover {
+    transform: scale(1.2);
 }
 
 
